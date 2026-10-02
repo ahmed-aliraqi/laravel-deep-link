@@ -1,0 +1,68 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "ahmed-aliraqi/laravel-deep-link",
+    "description": "Universal Links, Android App Links and smart landing pages for Laravel: shareable URLs that open the mobile app when it is installed and fall back to the stores when it is not.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "deep-link",
+        "deep-links",
+        "universal-links",
+        "app-links",
+        "apple-app-site-association",
+        "assetlinks",
+        "smart-app-banner",
+        "mobile",
+        "share"
+    ],
+    "authors": [
+        {
+            "name": "Ahmed Fathy",
+            "email": "ahmed@fathy.me"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^10.0 || ^11.0 || ^12.0",
+        "illuminate/http": "^10.0 || ^11.0 || ^12.0",
+        "illuminate/routing": "^10.0 || ^11.0 || ^12.0",
+        "illuminate/support": "^10.0 || ^11.0 || ^12.0",
+        "illuminate/view": "^10.0 || ^11.0 || ^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "orchestra/testbench": "^8.14 || ^9.0 || ^10.0",
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AhmedAliraqi\\LaravelDeepLink\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AhmedAliraqi\\LaravelDeepLink\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AhmedAliraqi\\LaravelDeepLink\\DeepLinkServiceProvider"
+            ],
+            "aliases": {
+                "DeepLink": "AhmedAliraqi\\LaravelDeepLink\\Facades\\DeepLink"
+            }
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/phpunit",
+        "lint": "@php vendor/bin/pint",
+        "lint:test": "@php vendor/bin/pint --test"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
