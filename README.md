@@ -1,7 +1,6 @@
 # Laravel Deep Link
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ahmed-aliraqi/laravel-deep-link.svg?style=flat-square)](https://packagist.org/packages/ahmed-aliraqi/laravel-deep-link)
-[![Tests](https://img.shields.io/github/actions/workflow/status/ahmed-aliraqi/laravel-deep-link/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ahmed-aliraqi/laravel-deep-link/actions)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahmed-aliraqi/laravel-deep-link.svg?style=flat-square)](https://packagist.org/packages/ahmed-aliraqi/laravel-deep-link)
 [![License](https://img.shields.io/packagist/l/ahmed-aliraqi/laravel-deep-link.svg?style=flat-square)](LICENSE.md)
 
